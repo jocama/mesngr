@@ -20,6 +20,20 @@ The server useage should be similar to: ./mesngr_svr port
 The client usage should be similar to: ./mesngr userid server port
 10. mesngr users should be able to specify their userid. If the userid is currently in use, the server should respond with a connection error.
 11. mesngr users should be able to specify the server (ip or name) and port where the server is running via the command line.
+12. mesngr users should be able to invite other users to chat with by entering an id (something like chat user1). If the messaged user is not in another conversation and accepts the invite. The two users enter into a private chat, which cannot be interrupted until one user enters quit.
 
 ## Usage Scenarios
 ### Ideal Case
+Start the server (./mesngr_svr 8443)
+Start a client (assuming localhost: ./mesngr user1 localhost 8443)
+Start another client (assuming localhost: ./mesngr user2 localhost 8443)
+Enter "chat user1" on client2
+On client1: "chat with user2?" enter "y"
+Send messages back and forth
+Start a 3rd client
+On client3 enter "chat with user2" -- should display "user2 is busy. try again later"
+On client1 enter quit.
+On client3 enter "chat with user2"
+On client2 display: "chat with user1?" enter "y"
+test messaging
+Quit client 2 and 3
