@@ -23,7 +23,7 @@ The server useage should be similar to: `./mesngr_svr port`
 </ol>
 ### Client
 The client usage should be similar to: `./mesngr userid server port`
-<ol>
+<ol start="11">
 <li>mesngr users should be able to specify their userid. If the userid is currently in use, the server should respond with a connection error.</li>
 <li>mesngr users should be able to specify the server (ip or name) and port where the server is running via the command line.</li>
 <li>mesngr users should be able to invite other users to chat with by entering an id (something like chat user1). If the messaged user is not in another conversation and accepts the invite. The two users enter into a private chat, which cannot be interrupted until one user enters quit.</li>
