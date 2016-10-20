@@ -31,16 +31,16 @@ The client usage should be similar to: `./mesngr userid server port`
 
 ## Usage Scenarios
 ### Ideal Case
-Start the server (./mesngr_svr 8443)  
-Start a client (assuming localhost: ./mesngr user1 localhost 8443)  
-Start another client (assuming localhost: ./mesngr user2 localhost 8443)  
-Enter "chat user1" on client2  
-On client1: "chat with user2?" enter "y"  
+Start the server (`./mesngr_svr 8443`)  
+Start a client (assuming localhost: `./mesngr user1 localhost 8443`)  
+Start another client (assuming localhost: `./mesngr user2 localhost 8443`)  
+Enter `chat user1` on client2  
+On client1: "chat with user2?" enter `y`  
 Send messages back and forth  
 Start a 3rd client  
-On client3 enter "chat with user2" -- should display "user2 is busy. try again later"  
+On client3 enter `chat user2` -- should display "user2 is busy. try again later"  
 On client1 enter quit.  
-On client3 enter "chat with user2"  
-On client2 display: "chat with user1?" enter "y"  
+On client3 enter `chat user2`  
+On client2 display: "chat with user1?" enter `y`   
 test messaging  
 Quit client 2 and 3  
